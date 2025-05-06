@@ -44,6 +44,7 @@ Bedrooms:
 ○ Max: 6 | Min: 1 | Average: 3
 ● Other Features:
 ○ Bathrooms, Stories, Parking all range from 1–4 with averages of 1–2 units
+
 ii. Categorical Summary (PivotTable Counts)
 Feature Yes No
 Basement 102 276
@@ -52,3 +53,59 @@ Air Conditioning 115 263
 Preferred Area 89 289
 Furnishing Status Furnished:98
 Semi: 157
+
+iii. Price Ranges
+Low Price: 254 homes
+Medium Price: 117 homes
+High Price: 7 homes
+
+# 4. Data Visualization 
+![image](https://github.com/user-attachments/assets/dfd34c01-9cca-4b14-ab82-c7383c4fa227)
+![image](https://github.com/user-attachments/assets/0d986e69-d4c6-4fd2-8429-e1fd2dfda5f9)
+Visuals Included:
+Bar chart of Price Range
+Scatter Plot: Area vs Price (with trendline & R² = 0.2691)
+Bar chart: Air Conditioning Status across Price Ranges
+KPIs: Max Area, Low Price House Count, Air-conditioned Homes
+Pie charts: AC and Prefarea status
+Column charts: Furnishing distribution
+Regression trendline chart: Area vs Price
+
+
+# Story:
+ The majority of homes (67%) fall into the low-price category. Despite the highest area being 16,200 sq ft, many large-area houses remain in lower price brackets. Air conditioning is present in 115 homes, most of which are medium-to-high priced. There is a weak positive correlation between area and price (R² = 0.2691), suggesting that area alone is not the dominant driver of price.
+
+5. Data Analysis
+Correlation Analysis
+Price vs Area: Weak positive correlation (r ≈ 0.52)
+Price vs Bedrooms: Mild relationship
+Interpretation: Area influences price more than number of bedrooms but is not a sole factor.
+Price Categories using IF Logic
+Used Excel IF statements to classify homes:
+Low: < GHS 3,000,000
+Medium: 3M–8M
+High: > 8M
+Used PivotTables to explore how features like AC, preferred area, and furnishing status vary across price bands.
+
+# Story:
+ Higher-priced homes tend to have air conditioning, be in preferred areas, and be furnished. Regression analysis shows an R² of 0.2691, indicating a weak model fit but still helpful in predicting general trends.
+
+# 7. Results – Full Data Story
+The dataset reveals that the majority of houses are priced below GHS 3 million. Factors such as AC, preferred area, and furnishing increase the likelihood of higher pricing. However, area alone does not strongly dictate price. The average home has 3 bedrooms, 1 bathroom, and minimal luxury features.
+Predictive modeling indicates that price trends are not affected by area; other factors significantly influence final pricing. The most valuable homes tend to be fully equipped and well-located.
+
+# 8. Discussion & Conclusion
+# Insights:
+Developers should invest in comfort features (AC, furnishing) and location selection (preferred areas) for value addition.
+The majority of homes are underpriced due to a lack of features.
+Regression is useful, but should be supported by feature scoring or advanced modeling for stronger predictions.
+
+# Recommendations:
+Add a guestroom and improve heating systems to increase value
+Target developments with more premium features for preferred area properties
+Use What-If Analysis for development planning (e.g., how much area to achieve the target price)
+
+
+
+
+
